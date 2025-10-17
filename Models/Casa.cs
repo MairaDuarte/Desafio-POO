@@ -112,8 +112,8 @@ namespace Desafio_POO.Models
             {
                 Console.WriteLine("Opção inválida, digite novamente!!");
             }
+            }
         }
-    }
         
                 
         public override bool EstaAlugado()
