@@ -1,0 +1,15 @@
+C:\Projetos\Desafio-POO\bin\Debug\net9.0\Desafio-POO.exe
+C:\Projetos\Desafio-POO\bin\Debug\net9.0\Desafio-POO.deps.json
+C:\Projetos\Desafio-POO\bin\Debug\net9.0\Desafio-POO.runtimeconfig.json
+C:\Projetos\Desafio-POO\bin\Debug\net9.0\Desafio-POO.dll
+C:\Projetos\Desafio-POO\bin\Debug\net9.0\Desafio-POO.pdb
+C:\Projetos\Desafio-POO\obj\Debug\net9.0\Desafio-POO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\Desafio-POO\obj\Debug\net9.0\Desafio-POO.AssemblyInfoInputs.cache
+C:\Projetos\Desafio-POO\obj\Debug\net9.0\Desafio-POO.AssemblyInfo.cs
+C:\Projetos\Desafio-POO\obj\Debug\net9.0\Desafio-POO.csproj.CoreCompileInputs.cache
+C:\Projetos\Desafio-POO\obj\Debug\net9.0\Desafio-POO.sourcelink.json
+C:\Projetos\Desafio-POO\obj\Debug\net9.0\Desafio-POO.dll
+C:\Projetos\Desafio-POO\obj\Debug\net9.0\refint\Desafio-POO.dll
+C:\Projetos\Desafio-POO\obj\Debug\net9.0\Desafio-POO.pdb
+C:\Projetos\Desafio-POO\obj\Debug\net9.0\Desafio-POO.genruntimeconfig.cache
+C:\Projetos\Desafio-POO\obj\Debug\net9.0\ref\Desafio-POO.dll
