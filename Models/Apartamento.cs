@@ -53,77 +53,21 @@ namespace Desafio_POO.Models
             return Aluguel;
         }
 
-        // public override void ContatoProprietario()
-        // {
-        //     bool nao= true;
-        //     while (nao)
-        //     {
-        //         Console.WriteLine($"Você deseja entrar em contato com o proprietario de um apartamento cadastrada ou alugada? Digite Cadastrada digite C e se for Alugada digite A");
-        //         string resposta = Console.ReadLine();
-        //         if (resposta == "C")
-        //         {
-        //             Console.WriteLine($"Digite o id do apartamento para conseguir o contato do proprietario");
-        //             string id = Console.ReadLine();
-        //             for (int i = 0; i < TodosOsApartamentosCadastradasParaAlugar.Count; i++)
-        //             {
-
-        //                 var apartamento = TodosOsApartamentosCadastradasParaAlugar[i];
-        //                 if (id == apartamento["Id"])
-        //                 {
-        //                     Console.WriteLine($"O Nome do proprietario da apartamento é n°{i} : {apartamento["Proprietario"]}");
-        //                     Console.WriteLine($"e seu contato é  : {apartamento["contato"]}");
-        //                 }
-        //                 else
-        //                 {
-        //                     Console.WriteLine("Não foi possivel encontrar id nos apartamentos que não foram cadastrados ");
-        //                 }
-
-        //             }
-        //             nao = false;
-
-
-        //         }
-        //         else if (resposta == "A")
-        //         {
-        //             Console.WriteLine($"Digite o id do apartamento para conseguir o contato do proprietario");
-        //             string id = Console.ReadLine();
-        //             for (int i = 0; i < TodosOsApartamentosAlugadas.Count; i++)
-        //             {
-
-        //                 var apartamento = TodosOsApartamentosAlugadas[i];
-        //                 if (id == apartamento["Id"])
-        //                 {
-        //                     Console.WriteLine($"O Nome do proprietario da apartamento é n°{i} : {apartamento["Proprietario"]}");
-        //                     Console.WriteLine($"e seu contato é  : {apartamento["contato"]}");
-        //                 }
-        //                 else
-        //                 {
-        //                     Console.WriteLine("Não foi possivel encontrar id nos apartamentos que não foram cadastrados ");
-        //                 }
-
-        //             }
-        //              nao = false;
-        //         }
-        //         else
-        //         {
-        //             Console.WriteLine("Não foi  possivel encontra, digite novamente!!");
-        //         }
-        //     }
-        //}
-public override void ContatoProprietario()
-{
-    bool nao = true;
-
-    while (nao)
-    {
-        Console.WriteLine("Digite C para Cadastrada ou A para Alugada:");
-        string resposta = Console.ReadLine();
-
-        if (resposta == "C")
+     
+        public override void ContatoProprietario()
         {
-            Console.WriteLine("Digite o id do apartamento:");
-            string id = Console.ReadLine();
-            bool encontrado = false;
+            bool nao = true;
+
+            while (nao)
+            {
+                Console.WriteLine("Digite C para Cadastrada ou A para Alugada:");
+                string resposta = Console.ReadLine();
+
+            if (resposta == "C")
+            {
+                Console.WriteLine("Digite o id do apartamento:");
+                string id = Console.ReadLine();
+                bool encontrado = false;
 
             for (int i = 0; i < TodosOsApartamentosCadastradasParaAlugar.Count; i++)
             {
@@ -143,38 +87,38 @@ public override void ContatoProprietario()
             }
 
             nao = false;
-        }
-        else if (resposta == "A")
-        {
-            Console.WriteLine("Digite o id do apartamento:");
-            string id = Console.ReadLine();
-            bool encontrado = false;
-
-            for (int i = 0; i < TodosOsApartamentosAlugadas.Count; i++)
+            }
+            else if (resposta == "A")
             {
-                var apartamento = TodosOsApartamentosAlugadas[i];
-                if (id == apartamento["Id"])
+                Console.WriteLine("Digite o id do apartamento:");
+                string id = Console.ReadLine();
+                bool encontrado = false;
+
+                for (int i = 0; i < TodosOsApartamentosAlugadas.Count; i++)
                 {
-                    Console.WriteLine($"O Nome do proprietario é n°{i} : {apartamento["Proprietario"]}");
-                    Console.WriteLine($"E seu contato é : {apartamento["Contato"]}");
-                    encontrado = true;
-                    break; // sai do for, achou o apartamento
+                    var apartamento = TodosOsApartamentosAlugadas[i];
+                    if (id == apartamento["Id"])
+                    {
+                        Console.WriteLine($"O Nome do proprietario é n°{i} : {apartamento["Proprietario"]}");
+                        Console.WriteLine($"E seu contato é : {apartamento["Contato"]}");
+                        encontrado = true;
+                        break; 
+                    }
+                }
+
+                if (!encontrado)
+                {
+                    Console.WriteLine("Não foi possível encontrar o id nos apartamentos alugados.");
+                }
+
+                nao = false;
+                }
+                else
+                {
+                    Console.WriteLine("Opção inválida, digite novamente!!");
                 }
             }
-
-            if (!encontrado)
-            {
-                Console.WriteLine("Não foi possível encontrar o id nos apartamentos alugados.");
-            }
-
-            nao = false;
-        }
-        else
-        {
-            Console.WriteLine("Opção inválida, digite novamente!!");
-        }
-    }
-}
+        }    
         
                 
         public override bool EstaAlugado()
